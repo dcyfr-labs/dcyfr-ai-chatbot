@@ -56,7 +56,7 @@ export type Message = z.infer<typeof MessageSchema>;
 export const ToolCallSchema = z.object({
   id: z.string(),
   name: z.string(),
-  arguments: z.record(z.unknown()),
+  arguments: z.record(z.string(), z.unknown()),
 });
 export type ToolCall = z.infer<typeof ToolCallSchema>;
 
@@ -64,10 +64,15 @@ export type ToolCall = z.infer<typeof ToolCallSchema>;
 export const ToolDefinitionSchema = z.object({
   name: z.string(),
   description: z.string(),
-  parameters: z.record(z.unknown()),
-  execute: z.function().optional(),
+  parameters: z.record(z.string(), z.unknown()),
+  execute: z.any().optional(),
 });
-export type ToolDefinition = z.infer<typeof ToolDefinitionSchema>;
+export interface ToolDefinition {
+  name: string;
+  description: string;
+  parameters: Record<string, unknown>;
+  execute?: (args: Record<string, unknown>) => Promise<unknown>;
+}
 
 // ============================================================================
 // Conversation Types
@@ -131,8 +136,17 @@ export const ChatConfigSchema = z.object({
   temperature: z.number().min(0).max(2).default(0.7),
   maxTokens: z.number().int().positive().default(4096),
   systemPrompt: z.string().default('You are a helpful AI assistant.'),
-  memory: MemoryConfigSchema.default({}),
-  streaming: StreamConfigSchema.default({}),
+  memory: MemoryConfigSchema.default({
+    type: 'sliding-window',
+    windowSize: 20,
+    maxTokens: 8192,
+  }),
+  streaming: StreamConfigSchema.default({
+    enabled: true,
+    chunkSize: 1,
+    flushIntervalMs: 50,
+    heartbeatIntervalMs: 15000,
+  }),
   rateLimit: RateLimitConfigSchema.optional(),
   tools: z.array(ToolDefinitionSchema).default([]),
   plugins: z.array(z.string()).default([]),
@@ -193,7 +207,7 @@ export const StreamChunkSchema = z.object({
   type: StreamChunkTypeSchema,
   data: z.unknown(),
   timestamp: z.number(),
-  metadata: z.record(z.unknown()).optional(),
+  metadata: z.record(z.string(), z.unknown()).optional(),
 });
 export type StreamChunk = z.infer<typeof StreamChunkSchema>;
 
@@ -205,7 +219,7 @@ export type StreamChunk = z.infer<typeof StreamChunkSchema>;
 export const ProviderConfigSchema = z.object({
   type: z.enum(['openai', 'anthropic', 'mock', 'custom']).default('openai'),
   apiKey: z.string().optional(),
-  baseUrl: z.string().url().optional(),
+  baseUrl: z.url().optional(),
   model: z.string().default('gpt-4o'),
   maxRetries: z.number().int().nonnegative().default(3),
   timeoutMs: z.number().int().positive().default(30000),
