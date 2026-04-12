@@ -5,13 +5,13 @@
   status: active
   name: dcyfr-ai-chatbot
   description: Conversational AI chatbot template - DCYFR AI starter
-  last_validated: 2026-03-29
+  last_validated: 2026-04-10
 -->
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/dcyfr/dcyfr-ai-chatbot)
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-24+-green?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6.0-blue?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-20+-green?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![AI](https://img.shields.io/badge/Use%20Case-Conversational%20AI-informational?style=flat-square)](https://github.com/dcyfr)
 [![Streaming](https://img.shields.io/badge/Feature-Streaming%20Responses-blue?style=flat-square)](https://github.com/dcyfr)
 [![Template](https://img.shields.io/badge/Template-Starter-blue?style=flat-square&logo=github)](https://github.com/dcyfr)
@@ -279,7 +279,7 @@ npm run test:coverage
 | ---------- | ------- |
 | Node.js    | ≥20.0.0 |
 | TypeScript | ~5.7    |
-| Zod        | ^3.23   |
+| Zod        | ^4.3.6  |
 
 ## License
 
