@@ -5,17 +5,17 @@
   status: active
   name: dcyfr-ai-chatbot
   description: Conversational AI chatbot template - DCYFR AI starter
-  last_validated: 2026-04-10
+  last_validated: 2026-07-11
 -->
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/dcyfr-labs/dcyfr-ai-chatbot)
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-6.0-blue?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-20+-green?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![AI](https://img.shields.io/badge/Use%20Case-Conversational%20AI-informational?style=flat-square)](https://github.com/dcyfr)
-[![Streaming](https://img.shields.io/badge/Feature-Streaming%20Responses-blue?style=flat-square)](https://github.com/dcyfr)
-[![Template](https://img.shields.io/badge/Template-Starter-blue?style=flat-square&logo=github)](https://github.com/dcyfr)
-[![Sponsor](https://img.shields.io/badge/sponsor-30363D?style=flat-square&logo=GitHub-Sponsors&logoColor=#EA4AAA)](https://github.com/sponsors/dcyfr)
+[![AI](https://img.shields.io/badge/Use%20Case-Conversational%20AI-informational?style=flat-square)](https://github.com/dcyfr-labs)
+[![Streaming](https://img.shields.io/badge/Feature-Streaming%20Responses-blue?style=flat-square)](https://github.com/dcyfr-labs)
+[![Template](https://img.shields.io/badge/Template-Starter-blue?style=flat-square&logo=github)](https://github.com/dcyfr-labs)
+[![Sponsor](https://img.shields.io/badge/sponsor-30363D?style=flat-square&logo=GitHub-Sponsors&logoColor=EA4AAA)](https://github.com/sponsors/dcyfr)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
 > Conversational AI chatbot template — DCYFR AI starter
@@ -30,7 +30,6 @@ A comprehensive framework for building multi-turn conversational AI applications
 
 - **DCYFR** is a registered trademark of DCYFR Labs.
 - Primary domain: [www.dcyfr.ai](https://www.dcyfr.ai)
-- Trademark guidance: [../TRADEMARK.md](../TRADEMARK.md)
 - Licensing details: [LICENSE](./LICENSE)
 
 ---
@@ -39,7 +38,7 @@ A comprehensive framework for building multi-turn conversational AI applications
 
 ```bash
 # Clone template
-npx degit dcyfr/dcyfr-ai-chatbot my-chatbot
+npx degit dcyfr-labs/dcyfr-ai-chatbot my-chatbot
 cd my-chatbot
 
 # Install and run
@@ -52,12 +51,14 @@ npx tsx examples/simple-chat/index.ts
 
 ## 🧭 Related Packages
 
-| Package                                | Purpose                | Type        |
-| -------------------------------------- | ---------------------- | ----------- |
-| [@dcyfr/ai](../dcyfr-ai)               | Core AI framework      | npm package |
-| [@dcyfr/ai-agents](../dcyfr-ai-agents) | Autonomous agents      | Template    |
-| [@dcyfr/ai-react](../dcyfr-ai-react)   | React UI template      | Template    |
-| [dcyfr-labs](../dcyfr-labs)            | Production Next.js app | Application |
+| Package                                                          | Purpose                | Type        |
+| ----------------------------------------------------------------- | ---------------------- | ----------- |
+| [@dcyfr/ai](https://github.com/dcyfr-labs/dcyfr-ai)                | Core AI framework      | npm package |
+| [@dcyfr/ai-agents](https://github.com/dcyfr-labs/dcyfr-ai-agents)  | Autonomous agents      | Template    |
+| [@dcyfr/ai-react](https://github.com/dcyfr-labs/dcyfr-ai-react)    | React UI template      | Template    |
+| [dcyfr-labs](https://github.com/dcyfr-labs/dcyfr-labs)             | Production Next.js app | Application |
+
+> This template declares an **optional peer dependency** on [`@dcyfr/ai`](https://github.com/dcyfr-labs/dcyfr-ai) (`^3.0.1`) — install it for core framework integrations; the template works without it.
 
 ---
 
@@ -273,13 +274,25 @@ npm run type-check
 npm run test:coverage
 ```
 
+## Configuration
+
+The template's code does not read environment variables — configuration is passed explicitly to `ChatEngine` (see [Usage](#usage)). [`.env.example`](.env.example) lists suggested variable names (`LLM_PROVIDER`, `OPENAI_API_KEY`/`OPENAI_BASE_URL`/`OPENAI_MODEL`, `CHAT_*`, `RATE_LIMIT_*`, `MEMORY_*`, `LOG_*`) you can wire into your own config loading when you connect a real provider; the bundled examples run on `MockProvider` and need no configuration.
+
+## Documentation
+
+- [API.md](API.md) — public API reference
+- [docs/API.md](docs/API.md) — detailed API documentation
+- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — architecture overview
+- [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) — development guide
+- [examples/README.md](examples/README.md) — example catalog
+
 ## Compatibility
 
 | Dependency | Version |
 | ---------- | ------- |
 | Node.js    | ≥20.0.0 |
-| TypeScript | ~5.7    |
-| Zod        | ^4.3.6  |
+| TypeScript | ~6.0    |
+| Zod        | ^4.4    |
 
 ## License
 
