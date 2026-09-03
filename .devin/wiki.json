@@ -1,8 +1,47 @@
 {
   "repo_notes": [
     {
-      "content": "Chatbot implementation using the DCYFR AI framework. Document the conversation management, message routing, context handling, and integration patterns for building conversational AI interfaces.",
-      "author": "DCYFR Engineering"
+      "content": "A starter template. Streaming and memory are the two subsystems readers come for.",
+      "author": "rei-doc-specialist"
+    },
+    {
+      "content": "tests/unit holds 21 of the repo test files; it is the densest description of intended behaviour in the repo.",
+      "author": "rei-doc-specialist"
+    }
+  ],
+  "pages": [
+    {
+      "title": "Chatbot Architecture",
+      "purpose": "How a message travels from input to streamed reply: the chat loop, provider selection, memory read and write, and the plugin hooks along the way."
+    },
+    {
+      "title": "Streaming",
+      "purpose": "The streaming implementation under src/streaming/: token delivery, backpressure, cancellation and partial-response handling.",
+      "parent": "Chatbot Architecture"
+    },
+    {
+      "title": "Memory",
+      "purpose": "Conversation memory under src/memory/: what is stored, how history is trimmed to fit a context window, and how memory is persisted between sessions.",
+      "parent": "Chatbot Architecture"
+    },
+    {
+      "title": "Providers",
+      "purpose": "The provider abstraction under src/providers/: adding a model backend, the differences the abstraction hides, and error and retry behaviour.",
+      "parent": "Chatbot Architecture"
+    },
+    {
+      "title": "Plugins and Middleware",
+      "purpose": "Extending the chat loop: the plugin interface under src/plugins/ and the middleware chain under src/middleware/.",
+      "parent": "Chatbot Architecture"
+    },
+    {
+      "title": "Examples",
+      "purpose": "The simple, streaming and advanced chat examples, and which subsystem each one exercises.",
+      "parent": "Chatbot Architecture"
+    },
+    {
+      "title": "Testing",
+      "purpose": "The Vitest layout and what the unit, provider and integration tiers each cover."
     }
   ]
 }
