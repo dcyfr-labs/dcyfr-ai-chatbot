@@ -599,7 +599,7 @@ Before deploying chatbot applications in production:
 
 Subscribe to security advisories:
 
-- **GitHub Security Advisories:** [dcyfr/dcyfr-ai-chatbot/security/advisories](https://github.com/dcyfr/dcyfr-ai-chatbot/security/advisories)
+- **GitHub Security Advisories:** [dcyfr-labs/dcyfr-ai-chatbot/security/advisories](https://github.com/dcyfr-labs/dcyfr-ai-chatbot/security/advisories)
 - **npm Security Advisories:** `npm audit` notifications
 - **Email Notifications:** security-announce@dcyfr.ai (low-volume mailing list)
 

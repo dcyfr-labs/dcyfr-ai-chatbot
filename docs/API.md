@@ -4,7 +4,7 @@
 **Package:** `@dcyfr/ai-chatbot`  
 **Current Version:** v0.2.0  
 **License:** MIT  
-**Repository:** [dcyfr/dcyfr-ai-chatbot](https://github.com/dcyfr/dcyfr-ai-chatbot)
+**Repository:** [dcyfr-labs/dcyfr-ai-chatbot](https://github.com/dcyfr-labs/dcyfr-ai-chatbot)
 
 **Information Classification:** TLP:CLEAR (Public)  
 **Last Updated:** February 8, 2026
@@ -1351,10 +1351,10 @@ Before v1.0.0, breaking changes may occur in minor versions. After v1.0.0:
 
 ## Support & Resources
 
-- **Documentation:** [GitHub README](https://github.com/dcyfr/dcyfr-ai-chatbot)
-- **Examples:** [examples/](https://github.com/dcyfr/dcyfr-ai-chatbot/tree/main/examples)
-- **Issues:** [GitHub Issues](https://github.com/dcyfr/dcyfr-ai-chatbot/issues)
-- **Security:** [SECURITY.md](https://github.com/dcyfr/dcyfr-ai-chatbot/blob/main/SECURITY.md)
+- **Documentation:** [GitHub README](https://github.com/dcyfr-labs/dcyfr-ai-chatbot)
+- **Examples:** [examples/](https://github.com/dcyfr-labs/dcyfr-ai-chatbot/tree/main/examples)
+- **Issues:** [GitHub Issues](https://github.com/dcyfr-labs/dcyfr-ai-chatbot/issues)
+- **Security:** [SECURITY.md](https://github.com/dcyfr-labs/dcyfr-ai-chatbot/blob/main/SECURITY.md)
 - **License:** MIT
 
 ---

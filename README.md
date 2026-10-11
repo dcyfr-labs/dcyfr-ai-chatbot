@@ -296,4 +296,4 @@ The template's code does not read environment variables — configuration is pas
 
 ## License
 
-MIT © DCYFR 2026
+MIT © DCYFR Labs
