@@ -606,4 +606,4 @@ try {
 
 **Version:** 1.0.0  
 **Last Updated:** February 8, 2026  
-**Full Documentation:** [https://github.com/dcyfr/dcyfr-ai-chatbot](https://github.com/dcyfr/dcyfr-ai-chatbot)
+**Full Documentation:** [https://github.com/dcyfr-labs/dcyfr-ai-chatbot](https://github.com/dcyfr-labs/dcyfr-ai-chatbot)
