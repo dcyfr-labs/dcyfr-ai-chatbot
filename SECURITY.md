@@ -2,7 +2,7 @@
 # Security Policy
 
 **Package:** @dcyfr/ai-chatbot  
-**Maintained By:** DCYFR Security Team  
+**Maintained By:** DCYFR Labs Security Team  
 **Last Updated:** February 8, 2026
 
 ---

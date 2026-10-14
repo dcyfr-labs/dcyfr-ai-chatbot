@@ -1362,4 +1362,4 @@ Before v1.0.0, breaking changes may occur in minor versions. After v1.0.0:
 **Last Updated:** February 8, 2026  
 **Document Version:** 1.0.0  
 **Package Version:** v0.2.0  
-**Maintained By:** DCYFR AI Team
+**Maintained By:** DCYFR Labs AI Team
