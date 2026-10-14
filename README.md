@@ -56,7 +56,7 @@ npx tsx examples/simple-chat/index.ts
 | [@dcyfr/ai](https://github.com/dcyfr-labs/dcyfr-ai)                | Core AI framework      | npm package |
 | [@dcyfr/ai-agents](https://github.com/dcyfr-labs/dcyfr-ai-agents)  | Autonomous agents      | Template    |
 | [@dcyfr/ai-react](https://github.com/dcyfr-labs/dcyfr-ai-react)    | React UI template      | Template    |
-| [dcyfr-labs](https://github.com/dcyfr-labs/dcyfr-labs)             | Production Next.js app | Application |
+| [dcyfr.ai](https://www.dcyfr.ai)             | DCYFR Labs website | Website     |
 
 > This template declares an **optional peer dependency** on [`@dcyfr/ai`](https://github.com/dcyfr-labs/dcyfr-ai) (`^3.0.1`) — install it for core framework integrations; the template works without it.
 
