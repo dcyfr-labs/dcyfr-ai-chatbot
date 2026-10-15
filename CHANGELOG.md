@@ -190,7 +190,7 @@
   **Package:** @dcyfr/ai-chatbot
   **Version:** v1.0.0
   **License:** MIT
-  **Maintained By:** DCYFR AI Team
+  **Maintained By:** DCYFR Labs AI Team
 
 ## 0.2.0
 
