@@ -281,6 +281,7 @@ The template's code does not read environment variables — configuration is pas
 ## Documentation
 
 - [API.md](API.md) — public API reference
+- [docs/README.md](docs/README.md): documentation index
 - [docs/API.md](docs/API.md) — detailed API documentation
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — architecture overview
 - [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) — development guide
