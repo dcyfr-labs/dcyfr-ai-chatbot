@@ -2,11 +2,11 @@
   "repo_notes": [
     {
       "content": "A starter template. Streaming and memory are the two subsystems readers come for.",
-      "author": "rei-doc-specialist"
+      "author": "dcyfr-doc-specialist"
     },
     {
       "content": "tests/unit holds 21 of the repo test files; it is the densest description of intended behaviour in the repo.",
-      "author": "rei-doc-specialist"
+      "author": "dcyfr-doc-specialist"
     }
   ],
   "pages": [
